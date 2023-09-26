@@ -28,302 +28,384 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.grBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.grBox2 = new System.Windows.Forms.GroupBox();
-            this.btnC = new System.Windows.Forms.Button();
-            this.btnB = new System.Windows.Forms.Button();
-            this.btnP = new System.Windows.Forms.Button();
-            this.grBox3 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnPlus = new System.Windows.Forms.Button();
-            this.btn939 = new System.Windows.Forms.Button();
-            this.btn839 = new System.Windows.Forms.Button();
-            this.btnStandart = new System.Windows.Forms.Button();
-            this.btnMinus = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.ffdsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.grBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.grBox2.SuspendLayout();
-            this.grBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.contextMenuStrip2.SuspendLayout();
-            this.SuspendLayout();
+            grBox1 = new GroupBox();
+            btnCenter = new PictureBox();
+            btnBottomLeght = new PictureBox();
+            btnTopRight = new PictureBox();
+            btnTopLefht = new PictureBox();
+            pictureBox3 = new PictureBox();
+            grBox2 = new GroupBox();
+            btnC = new Button();
+            btnB = new Button();
+            btnP = new Button();
+            grBox3 = new GroupBox();
+            lblSizeWorkTable = new Label();
+            lblSizeForm = new Label();
+            lblLocationPanel = new Label();
+            lblSolution = new Label();
+            txtLocationPanel = new TextBox();
+            txtSizeForm = new TextBox();
+            txtSizeWorkTable = new TextBox();
+            txtSolution = new TextBox();
+            groupBox4 = new GroupBox();
+            btnPlus = new Button();
+            btn939 = new Button();
+            btn839 = new Button();
+            btnStandart = new Button();
+            btnMinus = new Button();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            contextMenuStrip2 = new ContextMenuStrip(components);
+            ffdsToolStripMenuItem = new ToolStripMenuItem();
+            grBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnCenter).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnBottomLeght).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnTopRight).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnTopLefht).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            grBox2.SuspendLayout();
+            grBox3.SuspendLayout();
+            groupBox4.SuspendLayout();
+            contextMenuStrip2.SuspendLayout();
+            SuspendLayout();
             // 
             // grBox1
             // 
-            this.grBox1.BackColor = System.Drawing.Color.Orange;
-            this.grBox1.Controls.Add(this.pictureBox5);
-            this.grBox1.Controls.Add(this.pictureBox2);
-            this.grBox1.Controls.Add(this.pictureBox4);
-            this.grBox1.Controls.Add(this.pictureBox1);
-            this.grBox1.Controls.Add(this.pictureBox3);
-            this.grBox1.Location = new System.Drawing.Point(31, 62);
-            this.grBox1.Name = "grBox1";
-            this.grBox1.Size = new System.Drawing.Size(317, 397);
-            this.grBox1.TabIndex = 0;
-            this.grBox1.TabStop = false;
-            this.grBox1.Text = "Расположение формы";
+            grBox1.BackColor = Color.Orange;
+            grBox1.Controls.Add(btnCenter);
+            grBox1.Controls.Add(btnBottomLeght);
+            grBox1.Controls.Add(btnTopRight);
+            grBox1.Controls.Add(btnTopLefht);
+            grBox1.Controls.Add(pictureBox3);
+            grBox1.Location = new Point(35, 83);
+            grBox1.Margin = new Padding(3, 4, 3, 4);
+            grBox1.Name = "grBox1";
+            grBox1.Padding = new Padding(3, 4, 3, 4);
+            grBox1.Size = new Size(362, 432);
+            grBox1.TabIndex = 0;
+            grBox1.TabStop = false;
+            grBox1.Text = "Расположение формы";
             // 
-            // pictureBox5
+            // btnCenter
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(117, 171);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(76, 80);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 5;
-            this.pictureBox5.TabStop = false;
+            btnCenter.Image = (Image)resources.GetObject("btnCenter.Image");
+            btnCenter.Location = new Point(138, 172);
+            btnCenter.Margin = new Padding(3, 4, 3, 4);
+            btnCenter.Name = "btnCenter";
+            btnCenter.Size = new Size(87, 107);
+            btnCenter.SizeMode = PictureBoxSizeMode.Zoom;
+            btnCenter.TabIndex = 5;
+            btnCenter.TabStop = false;
+            btnCenter.Click += btnCenter_Click;
             // 
-            // pictureBox2
+            // btnBottomLeght
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(6, 312);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(77, 79);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            btnBottomLeght.Image = (Image)resources.GetObject("btnBottomLeght.Image");
+            btnBottomLeght.Location = new Point(7, 307);
+            btnBottomLeght.Margin = new Padding(3, 4, 3, 4);
+            btnBottomLeght.Name = "btnBottomLeght";
+            btnBottomLeght.Size = new Size(88, 105);
+            btnBottomLeght.SizeMode = PictureBoxSizeMode.Zoom;
+            btnBottomLeght.TabIndex = 3;
+            btnBottomLeght.TabStop = false;
+            btnBottomLeght.Click += btnBottomLeght_Click;
             // 
-            // pictureBox4
+            // btnTopRight
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(225, 22);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(77, 79);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            btnTopRight.Image = (Image)resources.GetObject("btnTopRight.Image");
+            btnTopRight.Location = new Point(257, 29);
+            btnTopRight.Margin = new Padding(3, 4, 3, 4);
+            btnTopRight.Name = "btnTopRight";
+            btnTopRight.Size = new Size(88, 105);
+            btnTopRight.TabIndex = 4;
+            btnTopRight.TabStop = false;
+            btnTopRight.Click += pictureBox4_Click;
             // 
-            // pictureBox1
+            // btnTopLefht
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 79);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            btnTopLefht.Image = (Image)resources.GetObject("btnTopLefht.Image");
+            btnTopLefht.Location = new Point(7, 29);
+            btnTopLefht.Margin = new Padding(3, 4, 3, 4);
+            btnTopLefht.Name = "btnTopLefht";
+            btnTopLefht.Size = new Size(88, 105);
+            btnTopLefht.TabIndex = 2;
+            btnTopLefht.TabStop = false;
+            btnTopLefht.Click += pictureBox1_Click;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(225, 312);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(77, 79);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(257, 307);
+            pictureBox3.Margin = new Padding(3, 4, 3, 4);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(88, 105);
+            pictureBox3.TabIndex = 3;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // grBox2
             // 
-            this.grBox2.BackColor = System.Drawing.Color.Orange;
-            this.grBox2.Controls.Add(this.btnC);
-            this.grBox2.Controls.Add(this.btnB);
-            this.grBox2.Controls.Add(this.btnP);
-            this.grBox2.Location = new System.Drawing.Point(407, 62);
-            this.grBox2.Name = "grBox2";
-            this.grBox2.Size = new System.Drawing.Size(269, 140);
-            this.grBox2.TabIndex = 1;
-            this.grBox2.TabStop = false;
-            this.grBox2.Text = "Размер формы";
+            grBox2.BackColor = Color.Orange;
+            grBox2.Controls.Add(btnC);
+            grBox2.Controls.Add(btnB);
+            grBox2.Controls.Add(btnP);
+            grBox2.Location = new Point(465, 83);
+            grBox2.Margin = new Padding(3, 4, 3, 4);
+            grBox2.Name = "grBox2";
+            grBox2.Padding = new Padding(3, 4, 3, 4);
+            grBox2.Size = new Size(307, 187);
+            grBox2.TabIndex = 1;
+            grBox2.TabStop = false;
+            grBox2.Text = "Размер формы";
             // 
             // btnC
             // 
-            this.btnC.Location = new System.Drawing.Point(9, 96);
-            this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(251, 32);
-            this.btnC.TabIndex = 2;
-            this.btnC.Text = "Свернуть";
-            this.btnC.UseVisualStyleBackColor = true;
+            btnC.Location = new Point(10, 128);
+            btnC.Margin = new Padding(3, 4, 3, 4);
+            btnC.Name = "btnC";
+            btnC.Size = new Size(287, 43);
+            btnC.TabIndex = 2;
+            btnC.Text = "Свернуть";
+            btnC.UseVisualStyleBackColor = true;
+            btnC.Click += btnC_Click;
             // 
             // btnB
             // 
-            this.btnB.Location = new System.Drawing.Point(9, 58);
-            this.btnB.Name = "btnB";
-            this.btnB.Size = new System.Drawing.Size(251, 32);
-            this.btnB.TabIndex = 1;
-            this.btnB.Text = "Восстановить";
-            this.btnB.UseVisualStyleBackColor = true;
+            btnB.Location = new Point(10, 77);
+            btnB.Margin = new Padding(3, 4, 3, 4);
+            btnB.Name = "btnB";
+            btnB.Size = new Size(287, 43);
+            btnB.TabIndex = 1;
+            btnB.Text = "Восстановить";
+            btnB.UseVisualStyleBackColor = true;
+            btnB.Click += btnB_Click;
             // 
             // btnP
             // 
-            this.btnP.Location = new System.Drawing.Point(9, 22);
-            this.btnP.Name = "btnP";
-            this.btnP.Size = new System.Drawing.Size(251, 32);
-            this.btnP.TabIndex = 0;
-            this.btnP.Text = "Развернуть";
-            this.btnP.UseVisualStyleBackColor = true;
-            this.btnP.Click += new System.EventHandler(this.button1_Click);
+            btnP.Location = new Point(10, 29);
+            btnP.Margin = new Padding(3, 4, 3, 4);
+            btnP.Name = "btnP";
+            btnP.Size = new Size(287, 43);
+            btnP.TabIndex = 0;
+            btnP.Text = "Развернуть";
+            btnP.UseVisualStyleBackColor = true;
+            btnP.Click += button1_Click;
             // 
             // grBox3
             // 
-            this.grBox3.BackColor = System.Drawing.Color.Orange;
-            this.grBox3.Controls.Add(this.button4);
-            this.grBox3.Controls.Add(this.button2);
-            this.grBox3.Controls.Add(this.button1);
-            this.grBox3.Controls.Add(this.button3);
-            this.grBox3.Location = new System.Drawing.Point(760, 62);
-            this.grBox3.Name = "grBox3";
-            this.grBox3.Size = new System.Drawing.Size(264, 397);
-            this.grBox3.TabIndex = 1;
-            this.grBox3.TabStop = false;
-            this.grBox3.Text = "Информация о экране";
+            grBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            grBox3.BackColor = Color.Orange;
+            grBox3.Controls.Add(lblSizeWorkTable);
+            grBox3.Controls.Add(lblSizeForm);
+            grBox3.Controls.Add(lblLocationPanel);
+            grBox3.Controls.Add(lblSolution);
+            grBox3.Controls.Add(txtLocationPanel);
+            grBox3.Controls.Add(txtSizeForm);
+            grBox3.Controls.Add(txtSizeWorkTable);
+            grBox3.Controls.Add(txtSolution);
+            grBox3.Location = new Point(869, 83);
+            grBox3.Margin = new Padding(3, 4, 3, 4);
+            grBox3.Name = "grBox3";
+            grBox3.Padding = new Padding(3, 4, 3, 4);
+            grBox3.Size = new Size(302, 529);
+            grBox3.TabIndex = 1;
+            grBox3.TabStop = false;
+            grBox3.Text = "Информация о экране";
             // 
-            // button4
+            // lblSizeWorkTable
             // 
-            this.button4.Location = new System.Drawing.Point(7, 327);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(251, 32);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            lblSizeWorkTable.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblSizeWorkTable.AutoSize = true;
+            lblSizeWorkTable.Location = new Point(74, 350);
+            lblSizeWorkTable.Name = "lblSizeWorkTable";
+            lblSizeWorkTable.Size = new Size(172, 20);
+            lblSizeWorkTable.TabIndex = 9;
+            lblSizeWorkTable.Text = "Размер рабочего стола";
             // 
-            // button2
+            // lblSizeForm
             // 
-            this.button2.Location = new System.Drawing.Point(6, 119);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(251, 32);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            lblSizeForm.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblSizeForm.AutoSize = true;
+            lblSizeForm.Location = new Point(105, 241);
+            lblSizeForm.Name = "lblSizeForm";
+            lblSizeForm.Size = new Size(114, 20);
+            lblSizeForm.TabIndex = 8;
+            lblSizeForm.Text = "Размер формы";
             // 
-            // button1
+            // lblLocationPanel
             // 
-            this.button1.Location = new System.Drawing.Point(6, 185);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(251, 32);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            lblLocationPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblLocationPanel.AutoSize = true;
+            lblLocationPanel.Location = new Point(62, 149);
+            lblLocationPanel.Name = "lblLocationPanel";
+            lblLocationPanel.Size = new Size(210, 20);
+            lblLocationPanel.TabIndex = 7;
+            lblLocationPanel.Text = "Расположение панели задач";
+            lblLocationPanel.Click += label4_Click;
             // 
-            // button3
+            // lblSolution
             // 
-            this.button3.Location = new System.Drawing.Point(7, 257);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(251, 32);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            lblSolution.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblSolution.AutoSize = true;
+            lblSolution.Location = new Point(91, 54);
+            lblSolution.Name = "lblSolution";
+            lblSolution.Size = new Size(139, 20);
+            lblSolution.TabIndex = 4;
+            lblSolution.Text = "Разрешени экрана";
+            lblSolution.Click += lblSolution_Click;
+            // 
+            // txtLocationPanel
+            // 
+            txtLocationPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtLocationPanel.Location = new Point(51, 172);
+            txtLocationPanel.Name = "txtLocationPanel";
+            txtLocationPanel.Size = new Size(222, 27);
+            txtLocationPanel.TabIndex = 3;
+            // 
+            // txtSizeForm
+            // 
+            txtSizeForm.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtSizeForm.Location = new Point(51, 264);
+            txtSizeForm.Name = "txtSizeForm";
+            txtSizeForm.Size = new Size(222, 27);
+            txtSizeForm.TabIndex = 2;
+            txtSizeForm.TextChanged += txtSizeForm_TextChanged;
+            // 
+            // txtSizeWorkTable
+            // 
+            txtSizeWorkTable.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtSizeWorkTable.Location = new Point(51, 373);
+            txtSizeWorkTable.Name = "txtSizeWorkTable";
+            txtSizeWorkTable.Size = new Size(222, 27);
+            txtSizeWorkTable.TabIndex = 1;
+            txtSizeWorkTable.TextChanged += textBox2_TextChanged;
+            // 
+            // txtSolution
+            // 
+            txtSolution.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtSolution.Location = new Point(51, 77);
+            txtSolution.Name = "txtSolution";
+            txtSolution.Size = new Size(222, 27);
+            txtSolution.TabIndex = 0;
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.Orange;
-            this.groupBox4.Controls.Add(this.btnPlus);
-            this.groupBox4.Controls.Add(this.btn939);
-            this.groupBox4.Controls.Add(this.btn839);
-            this.groupBox4.Controls.Add(this.btnStandart);
-            this.groupBox4.Controls.Add(this.btnMinus);
-            this.groupBox4.Location = new System.Drawing.Point(407, 264);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(269, 195);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Размер формы";
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+            groupBox4.BackColor = Color.Orange;
+            groupBox4.Controls.Add(btnPlus);
+            groupBox4.Controls.Add(btn939);
+            groupBox4.Controls.Add(btn839);
+            groupBox4.Controls.Add(btnStandart);
+            groupBox4.Controls.Add(btnMinus);
+            groupBox4.Location = new Point(465, 316);
+            groupBox4.Margin = new Padding(3, 4, 3, 4);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Padding = new Padding(3, 4, 3, 4);
+            groupBox4.Size = new Size(307, 260);
+            groupBox4.TabIndex = 1;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Размер формы";
+            groupBox4.Enter += groupBox4_Enter;
             // 
             // btnPlus
             // 
-            this.btnPlus.Location = new System.Drawing.Point(179, 146);
-            this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(75, 43);
-            this.btnPlus.TabIndex = 6;
-            this.btnPlus.Text = "+";
-            this.btnPlus.UseVisualStyleBackColor = true;
+            btnPlus.Location = new Point(205, 195);
+            btnPlus.Margin = new Padding(3, 4, 3, 4);
+            btnPlus.Name = "btnPlus";
+            btnPlus.Size = new Size(86, 57);
+            btnPlus.TabIndex = 6;
+            btnPlus.Text = "+";
+            btnPlus.UseVisualStyleBackColor = true;
+            btnPlus.Click += btnPlus_Click;
             // 
             // btn939
             // 
-            this.btn939.Location = new System.Drawing.Point(3, 93);
-            this.btn939.Name = "btn939";
-            this.btn939.Size = new System.Drawing.Size(251, 32);
-            this.btn939.TabIndex = 5;
-            this.btn939.Text = "939 X 564";
-            this.btn939.UseVisualStyleBackColor = true;
+            btn939.Location = new Point(3, 124);
+            btn939.Margin = new Padding(3, 4, 3, 4);
+            btn939.Name = "btn939";
+            btn939.Size = new Size(287, 43);
+            btn939.TabIndex = 5;
+            btn939.Text = "939 X 564";
+            btn939.UseVisualStyleBackColor = true;
+            btn939.Click += btn939_Click;
             // 
             // btn839
             // 
-            this.btn839.Location = new System.Drawing.Point(3, 55);
-            this.btn839.Name = "btn839";
-            this.btn839.Size = new System.Drawing.Size(251, 32);
-            this.btn839.TabIndex = 4;
-            this.btn839.Text = "839 X 464";
-            this.btn839.UseVisualStyleBackColor = true;
+            btn839.Location = new Point(3, 73);
+            btn839.Margin = new Padding(3, 4, 3, 4);
+            btn839.Name = "btn839";
+            btn839.Size = new Size(287, 43);
+            btn839.TabIndex = 4;
+            btn839.Text = "839 X 464";
+            btn839.UseVisualStyleBackColor = true;
+            btn839.Click += btn839_Click;
             // 
             // btnStandart
             // 
-            this.btnStandart.Location = new System.Drawing.Point(3, 17);
-            this.btnStandart.Name = "btnStandart";
-            this.btnStandart.Size = new System.Drawing.Size(251, 32);
-            this.btnStandart.TabIndex = 3;
-            this.btnStandart.Text = "Стандартный";
-            this.btnStandart.UseVisualStyleBackColor = true;
+            btnStandart.Location = new Point(3, 23);
+            btnStandart.Margin = new Padding(3, 4, 3, 4);
+            btnStandart.Name = "btnStandart";
+            btnStandart.Size = new Size(287, 43);
+            btnStandart.TabIndex = 3;
+            btnStandart.Text = "Стандартный";
+            btnStandart.UseVisualStyleBackColor = true;
+            btnStandart.Click += btnStandart_Click;
             // 
             // btnMinus
             // 
-            this.btnMinus.Location = new System.Drawing.Point(9, 146);
-            this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(75, 43);
-            this.btnMinus.TabIndex = 1;
-            this.btnMinus.Text = "-";
-            this.btnMinus.UseVisualStyleBackColor = true;
+            btnMinus.Location = new Point(10, 195);
+            btnMinus.Margin = new Padding(3, 4, 3, 4);
+            btnMinus.Name = "btnMinus";
+            btnMinus.Size = new Size(86, 57);
+            btnMinus.TabIndex = 1;
+            btnMinus.Text = "-";
+            btnMinus.UseVisualStyleBackColor = true;
+            btnMinus.Click += btnMinus_Click;
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
             // 
             // contextMenuStrip2
             // 
-            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ffdsToolStripMenuItem});
-            this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(95, 26);
+            contextMenuStrip2.ImageScalingSize = new Size(20, 20);
+            contextMenuStrip2.Items.AddRange(new ToolStripItem[] { ffdsToolStripMenuItem });
+            contextMenuStrip2.Name = "contextMenuStrip2";
+            contextMenuStrip2.Size = new Size(104, 28);
             // 
             // ffdsToolStripMenuItem
             // 
-            this.ffdsToolStripMenuItem.Name = "ffdsToolStripMenuItem";
-            this.ffdsToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
-            this.ffdsToolStripMenuItem.Text = "ffds";
+            ffdsToolStripMenuItem.Name = "ffdsToolStripMenuItem";
+            ffdsToolStripMenuItem.Size = new Size(103, 24);
+            ffdsToolStripMenuItem.Text = "ffds";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1060, 552);
-            this.Controls.Add(this.grBox2);
-            this.Controls.Add(this.grBox3);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.grBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.grBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.grBox2.ResumeLayout(false);
-            this.grBox3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.contextMenuStrip2.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1211, 736);
+            Controls.Add(grBox2);
+            Controls.Add(grBox3);
+            Controls.Add(groupBox4);
+            Controls.Add(grBox1);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            grBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnCenter).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnBottomLeght).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnTopRight).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnTopLefht).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            grBox2.ResumeLayout(false);
+            grBox3.ResumeLayout(false);
+            grBox3.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            contextMenuStrip2.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
@@ -332,10 +414,10 @@
         private GroupBox grBox2;
         private GroupBox grBox3;
         private GroupBox groupBox4;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox4;
+        private PictureBox btnTopLefht;
+        private PictureBox btnCenter;
+        private PictureBox btnBottomLeght;
+        private PictureBox btnTopRight;
         private PictureBox pictureBox3;
         private Button btnC;
         private Button btnB;
@@ -348,9 +430,13 @@
         private ContextMenuStrip contextMenuStrip1;
         private ContextMenuStrip contextMenuStrip2;
         private ToolStripMenuItem ffdsToolStripMenuItem;
-        private Button button4;
-        private Button button2;
-        private Button button1;
-        private Button button3;
+        private Label lblLocationPanel;
+        private Label lblSolution;
+        private TextBox txtLocationPanel;
+        private TextBox txtSizeForm;
+        private TextBox txtSizeWorkTable;
+        private TextBox txtSolution;
+        private Label lblSizeForm;
+        private Label lblSizeWorkTable;
     }
 }
